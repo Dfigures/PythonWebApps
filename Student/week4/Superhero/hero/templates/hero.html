@@ -1,0 +1,20 @@
+{% extends 'index.html' %}
+
+
+
+{% block content %}
+
+<h3>Hero List</h3>
+<ul>
+  {% for hero in heroes %}
+      <li>
+          <a href="{{ hero.url }}"> <!-- Wrap the name and image with a link -->
+              <h2>{{ hero.name }}</h2>
+              <img src="{{ hero.image }}" alt="{{ hero.name }}" width="200px">
+          </a>
+      </li>
+  {% endfor %}
+</ul>
+
+
+{% endblock content %}
