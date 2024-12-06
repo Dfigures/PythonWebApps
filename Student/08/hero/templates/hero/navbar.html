@@ -1,0 +1,42 @@
+{% load crispy_forms_tags %}
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark text-light">
+
+    <div class="container">
+
+        <a class="navbar-brand text-light" href="/">Account Options</a>
+
+        <ul class="navbar-nav text-light ml-auto">
+            
+
+            {% if user.is_authenticated %}
+
+            <li class="nav-item">
+                <!--<a class="nav-link  text-light " href="{% url 'logout' %}">Hello {{ user.username }}</a> -->
+                <p class="nav-link  text-light " >Hello {{user.username}}</p>
+            </li>
+            <li class="nav-item">
+                <form method="post" action="{% url 'logout' %}" class="nav-link  text-light ">
+                    {% csrf_token %}
+
+                    {{ form|crispy }}
+                    <button type="submit">Logout</button>
+                </form>
+            </li>
+
+            {% else %}
+
+            <li class="nav-item">
+                <a class="nav-link  text-light " href="{% url 'login' %}">Log In</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link  text-light " href="{% url 'signup' %}">Sign Up</a>
+            </li>
+
+            {% endif %}
+
+        </ul>
+
+    </div>
+
+</nav>

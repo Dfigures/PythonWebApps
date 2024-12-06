@@ -6,7 +6,7 @@
     "configurations": [
         {
             "name": "Run server",
-            "type": "python",
+            "type": "debugpy",
             "request": "launch",
             "program": "manage.py",
             "cwd": "${workspaceFolder}/14/SoftwarePlanner",
@@ -19,7 +19,7 @@
         },
         {
             "name": "Django Test",
-            "type": "python",
+            "type": "debugpy",
             "request": "launch",
             "program": "manage.py",
             "cwd": "${workspaceFolder}/14/SoftwarePlanner",
@@ -31,7 +31,7 @@
         },
         {
             "name": "Quick Test",
-            "type": "python",
+            "type": "debugpy",
             "request": "launch",
             "program": "manage.py",
             "cwd": "${workspaceFolder}/14/SoftwarePlanner",
@@ -43,10 +43,10 @@
         },
         {
             "name": "Get Pages",
-            "type": "python",
+            "type": "debugpy",
             "request": "launch",
             "program": "manage.py",
-            "cwd": "${workspaceFolder}/14/SoftwarePlanner",
+            "cwd": "${workspaceFolder}/Student/08real",
             "args": [
                 "pages"
             ],
