@@ -1,3 +1,3 @@
 from django.contrib import admin
-from .models import Superhero
-admin.site.register(Superhero)
+from .models import Hero
+admin.site.register(Hero)
