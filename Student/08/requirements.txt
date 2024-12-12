@@ -10,3 +10,4 @@ requests
 pillow
 sqlparse
 whitenoise
+crispy-bootstrap5
