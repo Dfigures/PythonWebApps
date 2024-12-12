@@ -12,7 +12,7 @@ services:
   github:
     branch: main
     deploy_on_push: true
-    repo: Mark-Seaman/PythonWebApps
+    repo: Dfigures/PythonWebApps
   http_port: 8080
   instance_count: 1
   instance_size_slug: basic-xxs
@@ -28,7 +28,7 @@ static_sites:
   github:
     branch: main
     deploy_on_push: true
-    repo: Mark-Seaman/PythonWebApps
+    repo: Dfigures/PythonWebApps
   name: webapps-demo-static
   routes:
   - path: /static
