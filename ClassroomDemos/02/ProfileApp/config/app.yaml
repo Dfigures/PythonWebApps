@@ -33,7 +33,7 @@ static_sites:
     branch: main
     deploy_on_push: true
     repo: Dfigures/PythonWebApps
-  name: webapps-demo-static
+  name: pythonwebapps-classroom-demos-static
   routes:
   - path: /static
   source_dir: ClassroomDemos/02/ProfileApp/static
